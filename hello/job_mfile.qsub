@@ -7,4 +7,3 @@
 module load matlab/2016a
 
 matlab -singleCompThread -nodisplay -r "hello; exit"
-
