@@ -1,0 +1,63 @@
+This directory includes sample Matlabe codes for high performance computing.
+
+------------------------------------------------------
+
+loop_order1.m: an exmaple for bad memory access
+
+loop_order2.m: an exmaple for good memory access
+
+opt0.m: an unoptimized code with poor performance
+
+opt9.m: an optimized code with good performance
+
+------------------------------------------------------
+
+mat_mul.m: to demonstrate implicit parallelism, compute matrix multiplication, compare performance between single and multiple threads.
+
+------------------------------------------------------
+
+parfor_id.m: to get worker ID in parfor region.
+
+parfor_disp.m: to use disp function in parfor region.
+
+parfor_var.m: to demonstrate all eligible types of variables in parfor region
+
+parfor_reduction.m: to demonstrate reduction variables in parfor region
+
+parfor_dependency.m: to demonstrate that parfor does not work when data dependency is involved.
+
+------------------------------------------------------
+
+spmd_num_index.m: to get total number and ID of workers in spmd region
+
+spmd_chunk.m: to get an array chunk in the spmd regoin
+
+spmd_bcast.m: to demonstrate the labBroadcast funcion
+
+spmd_sendrecv.m: to demonstrate the labSendReceive function
+
+spmd_comp_dist.m: to demonstrate Composite variable and distribute funcion
+
+spmd_codistribute.m: to demonstrate the condistribute funcion
+
+integration.m: a parallel code to compute an integration using spmd
+
+------------------------------------------------------
+
+calc_pi_serial.m: a serial code to compute the value of pi
+
+calc_pi_parfor.m: a parallel code to compute the value of pi using parfor
+
+calc_pi_spmd.m: a parallel code to compute the value of pi using spmd
+
+------------------------------------------------------
+
+gpu_mat_mul.m: to compute matrix multiplication on GPU
+
+------------------------------------------------------
+
+job.array.sh: a script to submit job array
+
+job.mfile: a script to submit a job using Matlab m-file.
+
+job.standalone: a script to submit a job using Matlabe standalone executable.
