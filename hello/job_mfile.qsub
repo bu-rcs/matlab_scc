@@ -1,0 +1,10 @@
+#!/bin/bash -l
+
+#$ -pe omp 1
+#$ -l h_rt=12:00:00
+#$ -N matlab_test
+
+module load matlab/2016a
+
+matlab -singleCompThread -nodisplay -r "hello; exit"
+
